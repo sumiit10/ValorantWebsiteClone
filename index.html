@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valorant Website</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navb navbar bg-body-tertiary">
+      <div class="cont container-fluid">
+        <div class="left-group">
+          <a class="navbar-brand riot" href="#">
+            <img src="Images/Riot_games_white.svg" alt="Riot Games Logo">
+          </a>
+          <a class="navbar-brand valo" href="#">
+            <img src="Images/valorant_white.svg" alt="Valorant Logo">
+          </a>
+
+          <div class="nav-links">
+            <div class="nav-game-title-wrapper">
+              <a class="nav-game-title" href="#">GAME INFO <span class="caret">▼</span></a>
+              <div class="dropdown-panel">
+                <a href="agents.html" class="dropdown-link">AGENTS</a>
+                <a href="#" class="dropdown-link">MAPS</a>
+                <a href="#" class="dropdown-link">ARSENAL</a>
+                <a href="#" class="dropdown-link">PREMIER</a>
+              </div>
+            </div>
+            <a class="nav-media" href="#">MEDIA</a>
+            <a class="nav-news" href="#">NEWS</a>
+            <a class="nav-support" href="#">SUPPORT <span class="caret">▼</span></a>
+            <a class="nav-social" href="#">OUR SOCIALS <span class="caret">▼</span></a>
+            <a class="nav-esports" href="#">ESPORTS <span class="ext-arrow">↗</span></a>
+            <a class="nav-more" href="#">MORE <span class="caret">▼</span></a>
+          </div>
+        </div>
+
+        <div class="right-group">
+          <div class="search-wrapper">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-toggle" onclick="toggleSearch()">
+              <img src="Images/search.svg" alt="Search" width="16" height="16">
+            </button>
+          </div>
+          <div class="lang">
+            <img src="Images/Globe.png" alt="lang" width="18" height="18">
+          </div>
+          <a class="play-now" href="#">PLAY NOW</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="vd">
+    <div class="overlay"></div>
+    <video muted autoplay loop plays-inline class="background-clip">
+      <source src="Background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <img src="Images/valorant_text.avif" alt="VALORANT" class="valo-text-img">
+      <h1 class="vid-text">VALORANT — A 5v5 tactical shooter featuring agents with unique abilities</h1>
+      <button class="play-free-btn">PLAY FOR FREE</button>
+    </div>
+
+  </div>
+  <div class="container-fluid d-flex justify-content-between align-items-center px-5 pt-5">
+    <h2 class="latest justify-content-start">THE LATEST</h2>
+    <a href="#" class="news-page text-decoration-none">GO TO THE NEWS PAGE <img src="Images/link.svg" alt="Arrow"
+        width="16" height="16"></a>
+  </div>
+
+  <div class="card-group mt-5 px-5 ">
+    <div class="card border-0 mx-1 ">
+      <img src="Images/card1.avif" class="card-img-top zoom-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">VALORANT COMMUNITY COMPETITION GUIDELINES</h5>
+        <p class="card-text">Interested in hosting a VALORANT Tournament? Read our new hosting policies!</p>
+        <p class="card-text"><small class="text-body-secondary">18/06/2026</small></p>
+      </div>
+    </div>
+    <div class="card border-0 mx-1 ">
+      <img src="Images/card2.avif" class="card-img-top zoom-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">No Guaranteed Paths: Inside the New VCT 2027</h5>
+        <p class="card-text">Today, we’re sharing additional VCT 2027 updates on formats, rewards and more!</p>
+        <p class="card-text"><small class="text-body-secondary">18/06/2026</small></p>
+      </div>
+    </div>
+    <div class="card border-0 mx-1 ">
+      <img src="Images/card3.avif" class="card-img-top zoom-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">The VCT in 2027 where EVERYTHING IS A TOURNAMENT?!</h5>
+        <p class="card-text">Open Qualifiers, Cups, and Masters + Champions. It’s simple, right?</p>
+        <p class="card-text"><small class="text-body-secondary">18/06/2026</small></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="season-banner">
+    <img src="Images/Act_starts_now.webp" alt="Season 26 Act III" class="season-banner-img">
+    <div class="season-banner-content">
+      <h2 class="season-banner-title">SEASON 26 ACT<br>III STARTS NOW</h2>
+      <p class="season-banner-text pb-4">Kick off ACT III with the return of Kuronami,<br>Skirmish: Ascension, a fresh
+        Map
+        rotation, and more.</p>
+      <a href="#" class="play-free-btn text-decoration-none">WATCH NOW</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&pli=1" target="_blank"
+        class="footer-app-link">DOWNLOAD RIOT MOBILE COMPANION APP</a>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-socials">
+        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="Images/Riot_games_white.svg" alt="Riot Games" class="footer-logo-img">
+      </div>
+
+      <p class="footer-copyright">
+        © 2020-2026 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks,<br>
+        service marks, and/or registered trademarks of Riot Games, Inc.
+      </p>
+
+      <div class="footer-links">
+        <a href="https://www.riotgames.com/en/privacy-notice">PRIVACY NOTICE</a>
+        <a href="https://www.riotgames.com/en/terms-of-service">TERMS OF SERVICE</a>
+        <a href="https://www.riotgames.com/en/company-information">COMPANY INFORMATION</a>
+        <a href="https://www.riotgames.com/en/cookie-preferences">COOKIE PREFERENCES</a>
+      </div>
+
+      <div class="footer-ratings">
+        <img src="Images/pegi.jpg" alt="PEGI 16">
+        <img src="Images/violence.png" alt="Violence">
+        <img src="Images/in-game-purchases.png" alt="In-Game Purchases">
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function toggleSearch() {
+      document.querySelector('.search-input').classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
